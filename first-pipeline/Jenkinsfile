@@ -9,18 +9,4 @@ pipeline {
       }
     }
   }
-  stages {
-    stage('Deploy') {
-      steps {
-        sh 'kubectl apply -f deployment.yml'
-      }
-    }
-  }
-  stages {
-    stage('build') {
-      steps {
-        sh 'node --version'
-      }
-    }
-  }
 }
