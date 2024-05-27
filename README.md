@@ -27,7 +27,7 @@ sudo apt-get install jenkins
 - Add inbound traffic rules as shown in the image (you can just allow TCP 8080 as well, in my case, I allowed All traffic).
 ![inbound_images](/Images/inbound_traffic.jpg)
 ## Configure EC2 Inbound traffic rules and fixed port 8080 from security Group 
-## Login to jenkins by url: http:// public p address:8080 
+## Login to jenkins by url: http:// public_ip_address:8080 
 ## Create first Admin user and then install docker as agent
 - Log in to Jenkins.
 - Go to Manage Jenkins > Manage Plugins.
