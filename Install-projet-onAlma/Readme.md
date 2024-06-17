@@ -1,7 +1,7 @@
 ## Install Jenkins on Alma linux 8.9
       yum update
       yum install wget
-put command:
+##### put command:
       sudo wget -O /etc/yum.repos.d/jenkins.repo \
       https://pkg.jenkins.io/redhat-stable/jenkins.repo
 Note: jenkins must install in yum.repos.d according jenkins
