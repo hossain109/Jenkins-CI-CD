@@ -1,20 +1,20 @@
 ##Install Jenkins on Alma linux 8.9
-    yum update
-    yum install wget
+      yum update
+      yum install wget
 put command:
-    sudo wget -O /etc/yum.repos.d/jenkins.repo \
-    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+      sudo wget -O /etc/yum.repos.d/jenkins.repo \
+      https://pkg.jenkins.io/redhat-stable/jenkins.repo
 Note: jenkins must install in yum.repos.d according jenkins
-    sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-    sudo dnf upgrade
-    sudo dnf install fontconfig java-17-openjdk
-    sudo dnf install jenkins
+      sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+      sudo dnf upgrade
+      sudo dnf install fontconfig java-17-openjdk
+      sudo dnf install jenkins
 
 ###start jenkins
 frist enable:
-    sudo systemctl enable jenkins
+       sudo systemctl enable jenkins
 Run jenkins:
-    sudo systemctl start jenkins
+      sudo systemctl start jenkins
 
 ###Note: By default il will be create a user called jenkins
 now add jenkins with group wheel
