@@ -18,9 +18,10 @@ Run jenkins:
 
 ### Note: By default il will be create a user called jenkins
 now add jenkins with group wheel
-    sudo usermod -aG wheel jenkins
+
+      sudo usermod -aG wheel jenkins
 
 Stop firewall by commnad line:
-    sudo systemctl stop firewalld
+      sudo systemctl stop firewalld
 
 ##### Access jenkins by browser: ip_adress:8080 and put password, install plugin, define username and password(by default username:admin) info:usr : admin, password: Inaya109   
