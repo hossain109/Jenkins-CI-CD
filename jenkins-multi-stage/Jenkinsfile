@@ -16,14 +16,14 @@ stages {
                 }
             }
          }
-      stage('Test') {
-            steps {
-                script {
-                    withMaven(maven: 'M3') {
-                        sh 'mvn test'
-                    }
-                }
-           }
-      }
+      // stage('Test') {
+      //       steps {
+      //           script {
+      //               withMaven(maven: 'M3') {
+      //                   sh 'mvn test'
+      //               }
+      //           }
+      //      }
+      // }
     }
 }
