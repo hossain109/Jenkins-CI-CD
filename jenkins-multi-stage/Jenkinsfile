@@ -16,14 +16,12 @@ stages {
                 }
             }
          }
-      // stage('Test') {
-      //       steps {
-      //           script {
-      //               withMaven(maven: 'M3') {
-      //                   sh 'mvn test'
-      //               }
-      //           }
-      //      }
-      // }
-    }
+        stage("Build and start test image") {
+            steps {
+                sh "docker-composer build"
+                sh "docker-compose up -d"
+                waitUntilServicesReady
+            }
+        }
+      }
 }
