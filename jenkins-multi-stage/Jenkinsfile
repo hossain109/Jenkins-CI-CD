@@ -1,9 +1,10 @@
 pipeline{
-      agent {lable 'MyNode'}
+     agent { label 'MyNode' }
 stages {
         stage ('Clone') {
             steps {
                 git branch: 'main', url: "https://github.com/hossain109/CICDMavenProject.git"
             }
         }
+}
 }
