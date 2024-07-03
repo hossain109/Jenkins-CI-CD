@@ -7,15 +7,6 @@ stages {
             }
         }
      
-       stage('Compile') {
-            steps {
-                script {
-                    withMaven(maven: 'M3') {
-                        sh 'mvn clean compile'
-                    }
-                }
-            }
-         }
         stage("Build and start test image") {
             steps {
                 sh "docker-composer build"
