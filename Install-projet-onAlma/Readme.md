@@ -25,3 +25,6 @@ Stop firewall by commnad line:
       sudo systemctl stop firewalld
 
 ##### Access jenkins by browser: ip_adress:8080 and put password, install plugin, define username and password(by default username:admin) info:usr : admin, password: Inaya109   
+
+
+Note: Test build by Jenkins allways on client server.
