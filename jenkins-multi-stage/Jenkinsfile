@@ -7,10 +7,9 @@ stages {
             }
         }
      
-        stage("Build and start test image") {
+        stage("Buil") {
             steps {
-                sh "docker-composer build"
-                sh "docker-compose up -d"
+              build 'https://github.com/hossain109/Jenkins-CI-CD.git'
             }
         }
       }
