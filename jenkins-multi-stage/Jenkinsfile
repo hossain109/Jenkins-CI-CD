@@ -6,7 +6,7 @@ stages {
                 git branch: 'main', url: "https://github.com/hossain109/CICDMavenProject.git"
             }
         }
-}
+     
        stage('Compile') {
             steps {
                 script {
@@ -15,5 +15,6 @@ stages {
                     }
                 }
             }
-        }
+      }
+      }
 }
