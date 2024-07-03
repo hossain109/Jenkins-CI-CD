@@ -16,7 +16,6 @@ stages {
                 }
             }
          }
-      }
       stage('Test') {
             steps {
                 script {
@@ -26,4 +25,12 @@ stages {
                 }
            }
       }
+              stage('Test') {
+            steps {
+                script {
+                    withMaven(maven: 'M3') {
+                        sh 'mvn test'
+                    }
+                }
+ }
 }
