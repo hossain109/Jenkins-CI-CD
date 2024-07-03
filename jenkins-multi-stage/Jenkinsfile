@@ -7,4 +7,13 @@ stages {
             }
         }
 }
+       stage('Compile') {
+            steps {
+                script {
+                    withMaven(maven: 'M3') {
+                        sh 'mvn clean compile'
+                    }
+                }
+            }
+        }
 }
