@@ -7,9 +7,9 @@ stages {
             }
         }
      
-        stage("Buil") {
+        stage("Build") {
             steps {
-              build 'https://github.com/hossain109/Jenkins-CI-CD.git'
+              build 'https://github.com/hossain109/Jenkins-CI-CD/tree/main/jenkins-multi-stage'
             }
         }
       }
